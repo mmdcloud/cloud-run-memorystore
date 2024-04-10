@@ -9,7 +9,7 @@ const redis = require("redis");
 const app = express();
 
 const client = redis.createClient({
-  "host": "10.90.128.3:6379"
+  "host": "10.90.128.3"
 });
 client.on("error", function(error) {
   console.error(error);
